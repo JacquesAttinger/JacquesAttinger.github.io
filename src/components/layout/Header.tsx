@@ -412,7 +412,7 @@ export function Header() {
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto flex flex-row items-center gap-2 md:mr-2">
                   <ThemeToggle />
-                  <GithubRepo />
+                  {/* <GithubRepo /> */}
                 </div>
               </div>
             </div>

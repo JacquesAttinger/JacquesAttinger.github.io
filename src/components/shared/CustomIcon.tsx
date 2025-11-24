@@ -34,7 +34,7 @@ export function CustomIcon({ name, size = 20 }: { name: string; size?: number })
     case 'argonne':
       return (
         <Image
-          src="/images/icon/argonne.jpeg"
+          src="/images/icon/argonnetransparent.png"
           alt="Argonne National Laboratory"
           width={30}
           height={30}
@@ -44,7 +44,7 @@ export function CustomIcon({ name, size = 20 }: { name: string; size?: number })
     case 'pritzermolecularengineering':
       return (
         <Image
-          src="/images/icon/pritzkermolecularengineering.jpg"
+          src="/images/icon/pmetransparent.png"
           alt="Pritzker Molecular Engineering"
           width={30}
           height={30}
@@ -64,10 +64,10 @@ export function CustomIcon({ name, size = 20 }: { name: string; size?: number })
     case 'iowastate':
       return (
         <Image
-          src="/images/icon/iowastate.png"
+          src="/images/icon/iowastatetransparent.png"
           alt="Iowa State University"
-          width={30}
-          height={30}
+          width={25}
+          height={25}
           priority={false}
         />
       );
