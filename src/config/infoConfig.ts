@@ -47,10 +47,22 @@ export const socialLinks: Array<SocialLinkType> = [
     href: 'https://github.com/JacquesAttinger',
     external: true
   },
+  // {
+  //   name: 'Email',
+  //   icon: 'email',
+  //   href: 'mailto:jacques.attinger@gmail.com',
+  //   external: true
+  // },
   {
-    name: 'Email',
-    icon: 'email',
-    href: 'mailto:jacques.attinger@gmail.com',
+    name: 'Google Scholar',
+    icon: 'googlescholar',
+    href: 'https://scholar.google.com/citations?user=_p4De1QAAAAJ&hl=en',
+    external: true
+  },
+  {
+    name: 'X',
+    icon: 'x',
+    href: 'https://x.com/Jukwezbob4',
     external: true
   }
 ]

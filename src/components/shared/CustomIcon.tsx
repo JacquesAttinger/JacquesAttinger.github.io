@@ -3,7 +3,9 @@
 import {
   GithubLogo,
   Envelope,
-  LinkedinLogo
+  LinkedinLogo,
+  GraduationCap,
+  XLogo
 } from '@phosphor-icons/react'
 import Image from 'next/image'
 
@@ -15,6 +17,10 @@ export function CustomIcon({ name, size = 20 }: { name: string; size?: number })
       return <Envelope size={size} weight="duotone" />;
     case 'linkedin':
       return <LinkedinLogo size={size} weight="duotone" />;
+    case 'googlescholar':
+      return <GraduationCap size={size} weight="duotone" />;
+    case 'x':
+      return <XLogo size={size} weight="duotone" />;
     case 'uchicago':
       return (
         <Image

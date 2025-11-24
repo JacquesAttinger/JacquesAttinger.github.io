@@ -17,7 +17,7 @@ import { headline, introduction } from '@/config/infoConfig'
 // import { CustomIcon } from '@/components/shared/CustomIcon'
 // import { TweetGrid } from "@/components/home/TweetGrid";
 import Image from 'next/image'
-import jacquesPhoto from '@/images/Jacquesphoto.jpg'
+import jacquesPhoto from '@/images/zoomedoutJacques.jpg'
 // import { MarqueeVertical } from '@/components/home/MarqueeVertical'
 // import Link from 'next/link'
 // import { ChevronRightIcon } from 'lucide-react'
@@ -48,7 +48,7 @@ export default async function Home() {
                 src={jacquesPhoto}
                 alt="Jacques Attinger"
                 fill
-                className="rounded-full object-cover"
+                className="rounded-full object-cover object-top"
                 priority
               />
             </div>

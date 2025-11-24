@@ -22,7 +22,7 @@ export default function SocialLinks({ className }: { className?: string }) {
                     <span className="sr-only">{link.name}</span>
                 </Link>
             ))}
-            <Link
+            {/* <Link
                 href={`mailto:${email}`}
                 target="_blank"
                 rel="noreferrer"
@@ -31,7 +31,7 @@ export default function SocialLinks({ className }: { className?: string }) {
             >
                 <CustomIcon name='email' />
                 <span className="sr-only">Email</span>
-            </Link>
+            </Link> */}
         </div>
     )
 }
