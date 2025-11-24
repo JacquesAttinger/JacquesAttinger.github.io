@@ -23,7 +23,7 @@ export default function Research() {
                                     href={pub.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-lg font-medium text-fuchsia-600 hover:underline"
+                                    className="text-lg font-medium text-sky-600 hover:underline"
                                 >
                                     {pub.title}
                                 </a>
