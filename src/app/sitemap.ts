@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site_url } from "@/config/siteConfig";
-import { getAllBlogs } from '@/lib/blogs'
+// import { getAllBlogs } from '@/lib/blogs'
 
 /**
  * Google's limit is 50,000 URLs per sitemap
@@ -10,7 +10,7 @@ import { getAllBlogs } from '@/lib/blogs'
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	console.log("sitemap start");
-  let blogs = await getAllBlogs()
+	// let blogs = await getAllBlogs()
 
 	const sitemapList: MetadataRoute.Sitemap = []; // final result
 
@@ -35,14 +35,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			url: "resources",
 			lastModified: new Date(),
 		},
-		{
-			url: "about",
-			lastModified: new Date(),
-		},
-    {
-			url: "blogs",
-			lastModified: new Date(),
-		},
+		// {
+		// 	url: "about",
+		// 	lastModified: new Date(),
+		// },
+		// {
+		// 	url: "blogs",
+		// 	lastModified: new Date(),
+		// },
 	];
 
 	for (const route of sitemapRoutes) {
@@ -53,12 +53,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		});
 	}
 
-  for (const blog of blogs) {
-    sitemapList.push({
-      url: `${site_url}/blogs/${blog.slug}`,
-      lastModified: new Date(blog.date).toISOString(),
-    });
-  }
+	// for (const blog of blogs) {
+	//   sitemapList.push({
+	//     url: `${site_url}/blogs/${blog.slug}`,
+	//     lastModified: new Date(blog.date).toISOString(),
+	//   });
+	// }
 
 	console.log("sitemap end, size:", sitemapList.length);
 	return sitemapList;

@@ -10,21 +10,21 @@ type NavItemType = {
 
 export const footerItems: Array<NavItemType> = [
   {
-    name: 'Home',
+    name: 'About',
     href: '/'
   },
-  {
-    name: 'About',
-    href: '/about'
-  },
+  // {
+  //   name: 'About',
+  //   href: '/about'
+  // },
   {
     name: 'Projects',
     href: '/projects'
   },
-  {
-    name: 'Blogs',
-    href: '/blogs'
-  },
+  // {
+  //   name: 'Blogs',
+  //   href: '/blogs'
+  // },
   {
     name: 'Friends',
     href: '/friends'
@@ -37,21 +37,21 @@ export const footerItems: Array<NavItemType> = [
 
 export const navItems: Array<NavItemType> = [
   {
-    name: 'Home',
+    name: 'About',
     href: '/'
   },
-  {
-    name: 'About',
-    href: '/about'
-  },
+  // {
+  //   name: 'About',
+  //   href: '/about'
+  // },
   {
     name: 'Projects',
     href: '/projects'
   },
-  {
-    name: 'Blogs',
-    href: '/blogs'
-  },
+  // {
+  //   name: 'Blogs',
+  //   href: '/blogs'
+  // },
   {
     name: 'Research',
     href: '/research'

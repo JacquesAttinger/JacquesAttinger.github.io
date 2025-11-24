@@ -27,7 +27,7 @@ export const careerList: Array<CareerItemType> = [
     end: 'Nov 2025'
   },
   {
-    company: 'Princeton UniversityDepartment of Mechanical and Aerospace Engineering',
+    company: 'Princeton University Department of Mechanical and Aerospace Engineering',
     title: 'Computational Modeling Intern',
     logo: 'princeton',
     start: 'Jun',

@@ -25,17 +25,17 @@ export default function Feed() {
     <div className="rounded-2xl border p-6 border-muted shadow-sm">
       <h2 className="flex text-sm font-semibold">
         <Rss size={26} weight="duotone" />
-        <span className="ml-3">Subscribe my blogs</span>
+        <span className="ml-3">Subscribe to updates</span>
       </h2>
       <p className="mt-4 ml-1 text-sm text-muted-foreground">
-        Welcome to Subscribe my blogs
+        Welcome to subscribe to my updates
       </p>
       <div className="mt-4 flex gap-4">
         <div className="relative flex-auto">
-          <div 
-          className={cn("min-w-0 flex-auto rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background",
-            copied ? 'text-primary': ''
-          )}
+          <div
+            className={cn("min-w-0 flex-auto rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background",
+              copied ? 'text-primary' : ''
+            )}
           >
             {feedUrl}
           </div>
@@ -55,8 +55,8 @@ export default function Feed() {
             </span>
           </Button>
         </div>
-        <Button 
-          onClick={() => window.open(feedUrl, '_blank')} 
+        <Button
+          onClick={() => window.open(feedUrl, '_blank')}
           className="hidden md:block flex-none bg-primary text-primary-foreground"
         >
           Subscribe
