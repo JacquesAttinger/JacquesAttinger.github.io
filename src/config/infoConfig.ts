@@ -8,7 +8,7 @@ export * from './activity'
 
 // personal info
 export const name = 'Jacques Attinger'
-export const headline = 'Math student'
+export const headline = 'Math student, programmer, and researcher'
 export const introduction = 'I’m Jacques, a math student based in Chicago, IL. I am  broadly interested in mathematics, AI/ML, and automation.'
 export const email = 'jacques.attinger@gmail.com'
 export const githubUsername = 'JacquesAttinger'

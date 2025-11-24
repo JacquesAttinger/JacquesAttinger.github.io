@@ -25,13 +25,17 @@ export const footerItems: Array<NavItemType> = [
   //   name: 'Blogs',
   //   href: '/blogs'
   // },
+  // {
+  //   name: 'Friends',
+  //   href: '/friends'
+  // },
+  // {
+  //   name: 'Changelog',
+  //   href: '/changelog'
+  // },
   {
-    name: 'Friends',
-    href: '/friends'
-  },
-  {
-    name: 'Changelog',
-    href: '/changelog'
+    name: 'Research',
+    href: '/research'
   }
 ]
 

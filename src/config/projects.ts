@@ -1,6 +1,6 @@
 // projects
-export const projectHeadLine = "How I spend my time outside of class"
-export const projectIntro = "I've worked on a variety of projects, both in research settings and as side projects."
+export const projectHeadLine = "Selected Works"
+export const projectIntro = ""
 
 export type ProjectItemType = {
   name: string
