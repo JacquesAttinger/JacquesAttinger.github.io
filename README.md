@@ -1,7 +1,7 @@
 🌍 *[English](README.md) ∙ [简体中文](README.zh.md)*
 
 
-# Corey Chiu Portfolio Template
+# Corey Chiu Portfolio Template (Edited to be Jacques Attinger's Portfolio)
 
 This is a portfolio template template created by [Corey Chiu](https://coreychiu.com).
 
