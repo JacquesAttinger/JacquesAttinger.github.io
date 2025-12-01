@@ -40,7 +40,7 @@ export default async function Home() {
             <p className="mt-6 text-base text-muted-foreground">
               {introduction} Please find a copy of my resume{' '}
               <a
-                href="/resume_November_24.pdf"
+                href="/Resume_November_24.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-sky-600 underline hover:text-teal-500 dark:text-zinc-100 dark:hover:text-teal-500"
