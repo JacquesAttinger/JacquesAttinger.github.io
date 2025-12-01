@@ -1,11 +1,10 @@
 
 
-
 import withMDX from '@next/mdx'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',    // <-- ADD THIS
+  output: 'export',
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   images: {
     unoptimized: true,
