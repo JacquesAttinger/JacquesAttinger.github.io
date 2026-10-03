@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 12:49 CDT
 "use client"
 
 
@@ -23,6 +24,14 @@ function EducationItem({ educationItem }: { educationItem: EducationItemType }) 
         <dd className="text-xs text-muted-foreground">
           {educationItem.major}
         </dd>
+        {educationItem.gpa && (
+          <>
+            <dt className="sr-only">GPA</dt>
+            <dd className="w-full text-xs text-muted-foreground">
+              GPA: {educationItem.gpa}
+            </dd>
+          </>
+        )}
         <dt className="sr-only">Date</dt>
         <dd
           className="ml-auto text-xs text-muted-foreground"

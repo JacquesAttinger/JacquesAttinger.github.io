@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 12:49 CDT
 'use client'
 
 import {
@@ -28,6 +29,17 @@ export function CustomIcon({ name, size = 20 }: { name: string; size?: number })
           alt="University of Chicago"
           width={size}
           height={size}
+          priority={false}
+        />
+      );
+    case 'hemut':
+      return (
+        <Image
+          src="/images/icon/hemut.png"
+          alt="Hemut"
+          width={28}
+          height={28}
+          className="rounded-sm"
           priority={false}
         />
       );

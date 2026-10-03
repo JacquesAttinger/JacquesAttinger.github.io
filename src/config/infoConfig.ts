@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 12:49 CDT
 export * from './projects'
 export * from './friends'
 export * from './changelog'
@@ -8,9 +9,9 @@ export * from './activity'
 
 // personal info
 export const name = 'Jacques Attinger'
-export const headline = 'Math student and researcher'
-export const introduction = 'I’m Jacques, an undergraduate studying math at the University of Chicago. Outside of my studies, I am broadly interested in automation and AI/ML research.'
-export const email = 'jacques.attinger@gmail.com'
+export const headline = 'ML Engineer and researcher'
+export const introduction = "I’m Jacques, a machine learning engineer and researcher studying math and computer science at the University of Chicago. I build LLM and computer-vision systems, from RAG pipelines at Hemut to autonomous electron-microscope workflows at Argonne National Laboratory."
+export const email = 'jacquesa@uchicago.edu'
 export const githubUsername = 'JacquesAttinger'
 
 // about page
@@ -38,21 +39,21 @@ export const socialLinks: Array<SocialLinkType> = [
   {
     name: 'LinkedIn',
     icon: 'linkedin',
-    href: 'https://www.linkedin.com/in/jacques-attinger-b1126922a/',
+    href: 'https://www.linkedin.com/in/jacquesattinger/',
     external: true
   },
   {
-    name: 'Github',
+    name: 'GitHub',
     icon: 'github',
     href: 'https://github.com/JacquesAttinger',
     external: true
   },
-  // {
-  //   name: 'Email',
-  //   icon: 'email',
-  //   href: 'mailto:jacques.attinger@gmail.com',
-  //   external: true
-  // },
+  {
+    name: 'Email',
+    ariaLabel: 'Email Jacques',
+    icon: 'email',
+    href: `mailto:${email}`
+  },
   {
     name: 'Google Scholar',
     icon: 'googlescholar',
