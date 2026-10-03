@@ -1,4 +1,4 @@
-// Last edited: 2026-10-03 12:49 CDT
+// Last edited: 2026-10-03 13:02 CDT
 "use client"
 
 
@@ -24,6 +24,13 @@ function EducationItem({ educationItem }: { educationItem: EducationItemType }) 
         <dd className="text-xs text-muted-foreground">
           {educationItem.major}
         </dd>
+        <dt className="sr-only">Date</dt>
+        <dd
+          className="ml-auto text-xs text-muted-foreground"
+          aria-label={`${educationItem.start} until ${educationItem.end}`}
+        >
+          {educationItem.start} - {educationItem.end}
+        </dd>
         {educationItem.gpa && (
           <>
             <dt className="sr-only">GPA</dt>
@@ -32,13 +39,6 @@ function EducationItem({ educationItem }: { educationItem: EducationItemType }) 
             </dd>
           </>
         )}
-        <dt className="sr-only">Date</dt>
-        <dd
-          className="ml-auto text-xs text-muted-foreground"
-          aria-label={`${educationItem.start} until ${educationItem.end}`}
-        >
-          {educationItem.start} - {educationItem.end}
-        </dd>
       </dl>
     </li>
   )
