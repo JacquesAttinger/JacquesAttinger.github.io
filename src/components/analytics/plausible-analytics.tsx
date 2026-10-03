@@ -1,13 +1,14 @@
+// Last edited: 2026-10-03 13:20 CDT
 "use client";
 
 import Script from "next/script";
 
-const plausibleUrl = process.env.NEXT_PUBLIC_PLAUSIBLE_URL!;
-const plausibleSrc = process.env.NEXT_PUBLIC_PLAUSIBLE_SRC!;
+const plausibleUrl = process.env.NEXT_PUBLIC_PLAUSIBLE_URL;
+const plausibleSrc = process.env.NEXT_PUBLIC_PLAUSIBLE_SRC;
 
 
 export function PlausibleAnalytics() {
-  if (process.env.NODE_ENV !== "production") {
+  if (process.env.NODE_ENV !== "production" || !plausibleUrl || !plausibleSrc) {
     return null;
   }
 

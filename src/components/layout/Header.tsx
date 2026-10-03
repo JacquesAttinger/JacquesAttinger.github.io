@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 13:20 CDT
 'use client'
 
 import { Fragment, useEffect, useRef, useState } from 'react'
@@ -168,7 +169,7 @@ function AvatarContainer({
           aria-label="Home"
           className='pointer-events-auto'
         >
-          <div className="text-md font-semibold capitalize">{name}</div>
+          <div className="text-base font-semibold capitalize">{name}</div>
         </Link>
       )}
     </div>
@@ -362,16 +363,16 @@ export function Header() {
                       style={{ transform: 'var(--avatar-image-transform)' }}
                     />
                     <div
-                      className="text-3xl md:text-6xl font-bold tracking-tight flex flex-row"
+                      className="text-3xl md:text-6xl font-bold tracking-tight flex flex-row gap-x-[0.25em]"
                       style={{
                         opacity: 'var(--avatar-hi-opacity, 0)',
                         transform: 'var(--avatar-hi-transform)'
                       }}
                     >
-                      Hi,{' '}
+                      Hi,
                       <TypingAnimation
                         className="text-3xl md:text-6xl font-bold tracking-tight"
-                        text={` I'm ${name}`}
+                        text={`I'm ${name}`}
                         duration={150}
                       />
                       {/* 👋 */}
