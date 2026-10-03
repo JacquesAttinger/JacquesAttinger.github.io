@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 12:49 CDT
 // Research page
 
 export type PublicationItemType = {
@@ -10,6 +11,14 @@ export type PublicationItemType = {
 
 
 export const publications: Array<PublicationItemType> = [
+    {
+        title: 'Towards autonomous imaging workflows using scanning electron microscopy for materials research',
+        authors: 'Ankush Kumar Mishra, Jacques W. Attinger, Tongchao Liu, Charudatta M. Phatak',
+        link: '/papers/Mishra_Attinger_2026_MRS_Communications.pdf',
+        venue: 'MRS Communications',
+        date: 'accepted 2026'
+
+    },
     {
         title: 'Fully Atom-Efficient Solvent-Mediated Biopolymer Manufacturing: A Base Case Illustrated with Macromolecular Surfactants Tailored to Stable Polymer–Water Interfaces',
         authors: 'Baker Kuehl, Sharan Raman, Andrew Becker, Vivek Garg, Jefferson Roberts-Dobie, Anna McCaslin, Joran Brensdal, Jacques Attinger, Lauren Burton, Michael Forrester, Austin Hohmann, Eric W. Cochran',

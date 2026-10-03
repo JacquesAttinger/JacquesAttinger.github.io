@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 12:49 CDT
 import { type Metadata } from 'next'
 import { SimpleLayout } from '@/components/layout/SimpleLayout'
 import { publications } from '@/config/research'
@@ -32,7 +33,7 @@ export default function Research() {
                                 <div className="text-zinc-600 dark:text-zinc-300">
                                     {pub.authors.split(', ').map((author, i, arr) => (
                                         <span key={i}>
-                                            {author === "Jacques Attinger" ? (
+                                            {author === "Jacques Attinger" || author === "Jacques W. Attinger" ? (
                                                 <span className="font-bold underline text-black dark:text-white">{author}</span>
                                             ) : (
                                                 author
