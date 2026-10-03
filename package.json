@@ -1,8 +1,8 @@
 {
-  "name": "coreychiu-portfolio-template",
+  "name": "jacques-attinger-portfolio",
   "version": "1.0.0",
   "private": true,
-  "author": "Corey Chiu",
+  "author": "Jacques Attinger",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
