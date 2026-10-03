@@ -1,5 +1,6 @@
+// Last edited: 2026-10-03 13:20 CDT
 import type { MetadataRoute } from "next";
-import { site_url }from "@/config/siteConfig";
+import { siteUrl } from "@/config/siteConfig";
 
 
 export default function robots(): MetadataRoute.Robots {
@@ -17,6 +18,6 @@ export default function robots(): MetadataRoute.Robots {
         ]
       },
     ],
-    sitemap: `${site_url}/sitemap.xml`,
+    sitemap: `${siteUrl}/sitemap.xml`,
   };
 }
