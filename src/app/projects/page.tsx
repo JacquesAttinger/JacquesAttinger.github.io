@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 12:49 CDT
 import { type Metadata } from 'next'
 import { SimpleLayout } from '@/components/layout/SimpleLayout'
 
@@ -29,7 +30,7 @@ export default function Projects() {
       <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
         <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
           <CustomIcon name='github' size={28} />
-          Github
+          GitHub
         </h2>
         <ul
           role="list"

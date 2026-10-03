@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 12:49 CDT
 "use client"
 
 import { ArrowRightIcon, HashIcon } from 'lucide-react'
@@ -9,7 +10,7 @@ import Link from 'next/link'
 import { Favicon } from "favicon-stealer";
 
 export function ProjectCard({ project, titleAs }: { project: ProjectItemType, titleAs?: keyof JSX.IntrinsicElements }) {
-  const utmLink = `https://${project.link.href}?utm_source=${utm_source}`
+  const utmLink = `https://${project.link?.href ?? ''}?utm_source=${utm_source}`
   let Component = titleAs ?? 'h2'
   return (
     <li className='group relative flex flex-col items-start h-full'>
@@ -17,7 +18,7 @@ export function ProjectCard({ project, titleAs }: { project: ProjectItemType, ti
         <div className=''>
           <div className='flex flex-col sm:flex-row justify-center sm:justify-start items-start sm:items-center gap-4'>
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full">
-              <Favicon url={project.link.href} src={project.logo} alt={`${project.name} logo`} />
+              <Favicon url={project.link?.href ?? ''} src={project.logo} alt={`${project.name} logo`} />
             </div>
             <Component className="text-base font-semibold">
               {project.name}
