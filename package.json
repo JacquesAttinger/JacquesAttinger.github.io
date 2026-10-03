@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -59,8 +60,19 @@
   "devDependencies": {
     "eslint": "^8.57.1",
     "eslint-config-next": "14.2.18",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "sharp": "0.33.1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{js,mjs,json,css,md,yml}": [
+      "prettier --write"
+    ]
   }
 }
