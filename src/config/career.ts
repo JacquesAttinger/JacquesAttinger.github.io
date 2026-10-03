@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 12:49 CDT
 
 // career
 export type CareerItemType = {
@@ -13,31 +14,31 @@ export type CareerItemType = {
 
 export const careerList: Array<CareerItemType> = [
   {
+    company: 'Hemut (YC X25)',
+    title: 'Software Engineering Intern',
+    logo: 'hemut',
+    start: 'Jun 2026',
+    end: 'Present'
+  },
+  {
     company: 'Argonne National Laboratory',
     title: 'Software Engineering Intern',
     logo: 'argonne',
-    start: 'Jun',
+    start: 'Jun 2025',
     end: 'Aug 2025'
   },
   {
-    company: 'UChicago Department of Molecular Engineering',
-    title: 'Lab Systems Engineer',
-    logo: 'pritzermolecularengineering',
-    start: 'Feb',
-    end: 'Nov 2025'
+    company: 'University of Chicago Department of Physics',
+    title: 'Undergraduate Researcher',
+    logo: 'uchicago',
+    start: 'Feb 2025',
+    end: 'May 2026'
   },
   {
-    company: 'Princeton University Department of Mechanical and Aerospace Engineering',
-    title: 'Computational Modeling Intern',
+    company: 'Princeton University Department of Mechanical & Aerospace Engineering',
+    title: 'Computational Research Intern',
     logo: 'princeton',
-    start: 'Jun',
+    start: 'Jun 2023',
     end: 'Aug 2023'
-  },
-  {
-    company: 'Iowa State University Department of Chemical and Biological Engineering',
-    title: 'Student Researcher',
-    logo: 'iowastate',
-    start: 'Jan',
-    end: 'May 2023'
   },
 ]

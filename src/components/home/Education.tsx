@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 13:02 CDT
 "use client"
 
 
@@ -30,6 +31,14 @@ function EducationItem({ educationItem }: { educationItem: EducationItemType }) 
         >
           {educationItem.start} - {educationItem.end}
         </dd>
+        {educationItem.gpa && (
+          <>
+            <dt className="sr-only">GPA</dt>
+            <dd className="w-full text-xs text-muted-foreground">
+              GPA: {educationItem.gpa}
+            </dd>
+          </>
+        )}
       </dl>
     </li>
   )

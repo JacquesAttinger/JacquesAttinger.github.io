@@ -1,3 +1,4 @@
+// Last edited: 2026-10-03 12:49 CDT
 
 import { Container } from '@/components/layout/Container'
 import Newsletter from '@/components/home/Newsletter'
@@ -40,7 +41,7 @@ export default async function Home() {
             <p className="mt-6 text-base text-muted-foreground">
               {introduction} Please find a copy of my resume{' '}
               <a
-                href="/Resume_November_24.pdf"
+                href="/Jacques_Attinger_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-sky-600 underline hover:text-teal-500 dark:text-zinc-100 dark:hover:text-teal-500"
