@@ -1,10 +1,7 @@
-// Last edited: 2026-10-03 12:49 CDT
+// Last edited: 2026-10-03 13:35 CDT
 export * from './projects'
-export * from './friends'
-export * from './changelog'
 export * from './education'
 export * from './career'
-export * from './activity'
 
 
 // personal info
@@ -13,18 +10,6 @@ export const headline = 'ML Engineer and researcher'
 export const introduction = "I’m Jacques, a machine learning engineer and researcher studying math and computer science at the University of Chicago. I build LLM and computer-vision systems, from RAG pipelines at Hemut to autonomous electron-microscope workflows at Argonne National Laboratory."
 export const email = 'jacquesa@uchicago.edu'
 export const githubUsername = 'JacquesAttinger'
-
-// about page
-export const aboutMeHeadline = "I'm Jacques Attinger, a mathematics student based in Chicago, IL."
-export const aboutParagraphs = [
-  "My hobbies include playing basketball, reading, and coding. I started college as a Math and Physics double major intending to pursue a career in academia, but my experience working in a lab has made me realize that I am interested in coding up solutions to real world problems."
-]
-
-
-// blog
-// export const blogHeadLine = "What I've thinking about."
-// export const blogIntro = "I've written something about AI, programming and life."
-
 
 // social links
 export type SocialLinkType = {
@@ -67,32 +52,3 @@ export const socialLinks: Array<SocialLinkType> = [
     external: true
   }
 ]
-
-// https://simpleicons.org/
-export const techIcons = [
-  "typescript",
-  "javascript",
-  "supabase",
-  "cloudflare",
-  "java",
-  "oracle",
-  "mysql",
-  "react",
-  "nodedotjs",
-  "nextdotjs",
-  "prisma",
-  "postgresql",
-  "nginx",
-  "vercel",
-  "docker",
-  "git",
-  "github",
-  "visualstudiocode",
-  "androidstudio",
-  "ios",
-  "apple",
-  "wechat"
-];
-
-
-

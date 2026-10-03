@@ -1,6 +1,6 @@
+// Last edited: 2026-10-03 13:20 CDT
 // site config
-export const utm_source = process.env.NEXT_PUBLIC_UTM_SOURCE
-export const site_url = process.env.NEXT_PUBLIC_SITE_URL
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://jacquesattinger.github.io'
 
 // navigation config
 type NavItemType = {
@@ -24,14 +24,6 @@ export const footerItems: Array<NavItemType> = [
   // {
   //   name: 'Blogs',
   //   href: '/blogs'
-  // },
-  // {
-  //   name: 'Friends',
-  //   href: '/friends'
-  // },
-  // {
-  //   name: 'Changelog',
-  //   href: '/changelog'
   // },
   {
     name: 'Research',

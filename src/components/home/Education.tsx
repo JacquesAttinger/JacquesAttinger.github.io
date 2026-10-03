@@ -1,4 +1,4 @@
-// Last edited: 2026-10-03 13:02 CDT
+// Last edited: 2026-10-03 13:20 CDT
 "use client"
 
 
@@ -16,11 +16,11 @@ function EducationItem({ educationItem }: { educationItem: EducationItemType }) 
         <CustomIcon name={educationItem.logo} />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
-        <dt className="sr-only">Company</dt>
+        <dt className="sr-only">School</dt>
         <dd className="w-full flex-none text-sm font-medium">
           {educationItem.school}
         </dd>
-        <dt className="sr-only">Title</dt>
+        <dt className="sr-only">Degree</dt>
         <dd className="text-xs text-muted-foreground">
           {educationItem.major}
         </dd>

@@ -1,6 +1,7 @@
+// Last edited: 2026-10-03 13:35 CDT
 'use client'
 
-import { Fragment, useEffect, useRef, useState } from 'react'
+import { Fragment, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -9,10 +10,8 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/layout/Container'
 import avatarImage from '@/images/geminiswirlypainting.png'
-// import avatarImage from '@/images/avatar.jpg'
 import { navItems } from '@/config/siteConfig'
 import { ThemeToggle } from '@/components/shared/ThemeToggle'
-import { GithubRepo } from '@/components/shared/GithubRepo'
 import { name } from '@/config/infoConfig'
 import { ChevronDownIcon, XIcon } from 'lucide-react'
 
@@ -168,7 +167,7 @@ function AvatarContainer({
           aria-label="Home"
           className='pointer-events-auto'
         >
-          <div className="text-md font-semibold capitalize">{name}</div>
+          <div className="text-base font-semibold capitalize">{name}</div>
         </Link>
       )}
     </div>
@@ -216,10 +215,6 @@ export function Header() {
 
     function setProperty(property: string, value: string) {
       document.documentElement.style.setProperty(property, value)
-    }
-
-    function removeProperty(property: string) {
-      document.documentElement.style.removeProperty(property)
     }
 
     function updateHeaderStyles() {
@@ -362,16 +357,16 @@ export function Header() {
                       style={{ transform: 'var(--avatar-image-transform)' }}
                     />
                     <div
-                      className="text-3xl md:text-6xl font-bold tracking-tight flex flex-row"
+                      className="text-3xl md:text-6xl font-bold tracking-tight flex flex-row gap-x-[0.25em]"
                       style={{
                         opacity: 'var(--avatar-hi-opacity, 0)',
                         transform: 'var(--avatar-hi-transform)'
                       }}
                     >
-                      Hi,{' '}
+                      Hi,
                       <TypingAnimation
                         className="text-3xl md:text-6xl font-bold tracking-tight"
-                        text={` I'm ${name}`}
+                        text={`I'm ${name}`}
                         duration={150}
                       />
                       {/* 👋 */}
@@ -412,7 +407,6 @@ export function Header() {
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto flex flex-row items-center gap-2 md:mr-2">
                   <ThemeToggle />
-                  {/* <GithubRepo /> */}
                 </div>
               </div>
             </div>

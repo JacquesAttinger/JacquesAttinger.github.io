@@ -1,23 +1,33 @@
+// Last edited: 2026-10-03 13:20 CDT
 import { type Metadata } from 'next'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/layout/Layout'
 import { Analytics } from "@/components/analytics/analytics";
 import { name, headline, introduction } from '@/config/infoConfig'
+import { siteUrl } from '@/config/siteConfig'
 import '@/styles/tailwind.css'
 
+const defaultTitle = `${name} - ${headline}`
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     template: `%s - ${name}`,
-    default:
-      `${name} - ${headline}`,
+    default: defaultTitle,
   },
-  description:
-    `${introduction}`,
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed`,
-    },
+  description: introduction,
+  openGraph: {
+    type: 'website',
+    siteName: name,
+    title: defaultTitle,
+    description: introduction,
+    url: siteUrl,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: defaultTitle,
+    description: introduction,
   },
 }
 
