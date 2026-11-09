@@ -1,4 +1,4 @@
-// Last edited: 2026-10-03 12:49 CDT
+// Last edited: 2026-11-09 15:55 PST
 // projects
 export const projectHeadLine = "Selected Projects"
 export const projectIntro = ""
@@ -111,6 +111,20 @@ export const projects: Array<ProjectItemType> = [
 ]
 
 export const githubProjects: Array<ProjectItemType> = [
+  {
+    name: 'Llama.cpp Inference',
+    description:
+      'Benchmarks Llama 3.1 8B on Apple silicon with llama.cpp: measures how model compression, prompt length, and batching affect generation speed and output quality.',
+    link: { href: 'github.com/JacquesAttinger/llamacpp-inference', label: 'Llama.cpp Inference' },
+    techStack: ['Python', 'llama.cpp', 'llama-cpp-python', 'NumPy', 'Matplotlib', 'pytest'],
+  },
+  {
+    name: 'CS336: Language Modeling From Scratch',
+    description:
+      'Implementation work for Stanford CS336 Assignment 1: builds a byte-pair encoding tokenizer and neural-network components from scratch in PyTorch, with notebooks to explore the underlying math.',
+    link: { href: 'github.com/JacquesAttinger/assignment1-basics', label: 'CS336 Assignment 1: Basics' },
+    techStack: ['Python', 'PyTorch', 'NumPy', 'Jupyter', 'pytest'],
+  },
   {
     name: 'ChessBuddy',
     description:
